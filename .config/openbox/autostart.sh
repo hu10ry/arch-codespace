@@ -6,9 +6,7 @@
 
 . ~/.config/desktop-env.sh
 
-xrdb -merge "/workspaces/doom/resources/themes/xterm/$THEME" &
-
-feh --bg-fill "/workspaces/doom/resources/wallpapers/$WALLPAPER" &
+feh --bg-fill "~/wallpapers/$WALLPAPER" &
 
 tint2 &
 

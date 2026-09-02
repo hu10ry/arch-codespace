@@ -1,6 +1,6 @@
 #!/bin/bash
 #Starts up the desktop enviroment
-Xvfb :1 -screen 0 1920x1080x24 &
+Xvfb :1 -screen 0 1920x1080x24 -dpi 120 &
 
 export DISPLAY=:1
 

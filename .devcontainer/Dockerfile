@@ -35,6 +35,9 @@ RUN pacman -Syu --noconfirm \
     7z \
     zip \
     unzip \
+    alacritty \
+    xed \
+    vlc \
     && pacman -Scc --noconfirm
 
 # Create the non-root Codespace user
