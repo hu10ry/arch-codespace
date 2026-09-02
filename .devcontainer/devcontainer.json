@@ -1,5 +1,8 @@
 {
     "name": "Arch Linux Codespace",
-    "image": "archlinux:latest",
-    "remoteUser": "codespace"
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "codespace",
+    "containerUser": "codespace"
 }
