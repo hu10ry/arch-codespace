@@ -14,6 +14,7 @@ RUN pacman -Syu --noconfirm \
     xorg-server-xvfb \
     xorg-xauth \
     openbox \
+    menumaker \
     lxappearance-obconf \
     obconf-qt \
     rofi \
@@ -31,6 +32,9 @@ RUN pacman -Syu --noconfirm \
     firefox \
     pipewire \
     wireplumber \
+    7z \
+    zip \
+    unzip \
     && pacman -Scc --noconfirm
 
 # Create the non-root Codespace user

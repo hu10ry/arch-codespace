@@ -6,7 +6,9 @@ export DISPLAY=:1
 
 sleep 2
 
-DISPLAY=:1 openbox-session &
+export DISPLAY=:1
+
+openbox-session &
 
 x11vnc -display :1 -nopw -forever -shared &
 
