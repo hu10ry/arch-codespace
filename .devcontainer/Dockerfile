@@ -32,7 +32,7 @@ RUN pacman -Syu --noconfirm \
     firefox \
     pipewire \
     wireplumber \
-    7z \
+    7zip \
     zip \
     unzip \
     alacritty \
