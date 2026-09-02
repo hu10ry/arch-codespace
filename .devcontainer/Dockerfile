@@ -3,11 +3,34 @@ FROM archlinux:latest
 # Update Arch and install basic tools
 RUN pacman -Syu --noconfirm \
     sudo \
+    fakeroot \
+    debugedit \
     git \
     wget \
     curl \
     nano \
     bash \
+    base-devel \
+    xorg-server-xvfb \
+    xorg-xauth \
+    openbox \
+    lxappearance-obconf \
+    obconf-qt \
+    rofi \
+    tint2 \
+    thunar \
+    xterm \
+    htop \
+    feh \
+    x11vnc \
+    fastfetch \
+    lxappearance \
+    dunst \
+    xclip \
+    xorg-xclipboard \
+    firefox \
+    pipewire \
+    wireplumber \
     && pacman -Scc --noconfirm
 
 # Create the non-root Codespace user
