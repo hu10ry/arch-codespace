@@ -12,18 +12,16 @@ cp -r .config ~/
 mmaker -vf OpenBox3
 
 mkdir ~/.themes
-mv resources/themes.zip ~/.themes
+cp resources/themes.zip ~/.themes
 cd ~/.themes
 7z x themes.zip
-cd /workspaces/arch-codespace
-
+rm themes.zip
 
 
 mkdir ~/.icons
-mv resources/Nordzy-cyan.tar.gz ~/.icons
-cd ~./icons
+cp resources/Nordzy-cyan.tar.gz ~/.icons
+cd ~/.icons
 tar -xf Nordzy-cyan.tar.gz
-cd /workspaces/arch-codespace
-
+rm Nordzy-cyan.tar.gz
 
 mv resources/wallpapers ~/
