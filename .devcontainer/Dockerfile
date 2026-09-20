@@ -38,6 +38,8 @@ RUN pacman -Syu --noconfirm \
     alacritty \
     xed \
     vlc \
+    man \
+    eog \
     && pacman -Scc --noconfirm
 
 # Create the non-root Codespace user

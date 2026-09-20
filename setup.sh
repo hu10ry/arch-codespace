@@ -9,7 +9,7 @@ yay -S novnc --noconfirm
 
 cp -r .config ~/
 
-mmaker -vf OpenBox3
+# mmaker -vf OpenBox3
 
 mkdir ~/.themes
 cp resources/themes.zip ~/.themes
@@ -18,9 +18,9 @@ cd ~/.themes
 rm themes.zip
 
 
-mkdir ~/.icons
-cp resources/Nordzy-cyan.tar.gz ~/.icons
-cd ~/.icons
+mkdir ~/.local/share/icons
+cp resources/Nordzy-cyan.tar.gz ~/.local/share/icons
+cd ~/.local/share/icons
 tar -xf Nordzy-cyan.tar.gz
 rm Nordzy-cyan.tar.gz
 

@@ -13,3 +13,5 @@ tint2 &
 sleep 1
 
 xterm &
+
+xed /workspaces/arch-codespace/get_started.md
