@@ -42,11 +42,12 @@ RUN pacman -Syu --noconfirm \
     eog \
     && pacman -Scc --noconfirm
 
-# Create the non-root Codespace user
-RUN useradd -m -s /bin/bash codespace \
+# Create the non-root ` user
+RUN useradd -m -s /bin/bash ` \
     && echo "codespace ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/codespace \
     && chmod 0440 /etc/sudoers.d/codespace
 
 USER codespace
 WORKDIR /home/codespace
-RUN bash /workspaces/arch-codespace/setup.sh
+COPY --chown=codespace:codespace setup.sh /home/codespace/setup.sh
+RUN bash ./setup.sh
