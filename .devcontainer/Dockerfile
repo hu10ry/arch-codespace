@@ -49,3 +49,4 @@ RUN useradd -m -s /bin/bash codespace \
 
 USER codespace
 WORKDIR /home/codespace
+RUN bash /workspaces/arch-codespace/setup.sh
