@@ -4,5 +4,6 @@
         "dockerfile": "Dockerfile"
     },
     "remoteUser": "codespace",
-    "containerUser": "codespace"
+    "containerUser": "codespace",
+    "postStartCommand": "touch /workspaces/arch-codespace/test.txt"
 }
